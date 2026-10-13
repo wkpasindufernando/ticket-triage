@@ -1,0 +1,18 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Java build output
+backend/target/
+
+# Python environment and cache
+ml-service/.venv/
+ml-service/__pycache__/
+*.py[cod]
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
