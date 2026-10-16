@@ -1,0 +1,24 @@
+<header>
+  <nav>
+    <div class="grid grid-cols-12 bg-white items-center border-b-2 border-green-500">
+      <div class="col-span-6 flex justify-start p-3 px-5">
+        <span class="hover:cursor-pointer font-bold text-lg block text-center" routerLink="/">{{ title() }}</span>
+      </div>
+
+      <div class="col-span-6 flex justify-end p-3 px-5 gap-2">
+        <button
+          routerLink="/createTicket"
+          class="hover:cursor-pointer justify-end rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          Create a Ticket
+        </button>
+        <button
+          routerLink="/"
+          class="hover:cursor-pointer justify-end rounded-md bg-yellow-500 px-4 py-2 text-sm font-medium text-white hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          Dashboard
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
