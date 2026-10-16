@@ -1,1 +1,71 @@
-<p>create-ticket works!</p>
+<div class="grid h-full grid-cols-12 overflow-hidden">
+  <div class="col-span-12 p-3 px-5 text-center lg:col-span-6">
+    <div class="flex flex-col gap-1 p-3 gap-y-3">
+      <div class="text-start">
+        <span name="name" class="text-start">Name</span>
+        <span class="text-gray-400"> (Optional)</span>
+      </div>
+      <input
+        type="text"
+        name="name"
+        placeholder="Jane Doe"
+        class="border-solid border-b-2 p-1"
+      />
+    </div>
+
+    <div class="flex flex-col gap-1 p-3 gap-y-3">
+      <div class="text-start">
+        <span name="email" class="text-start">Email</span>
+        <span class="text-gray-400"> (Optional)</span>
+      </div>
+      <input
+        type="text"
+        name="email"
+        placeholder="jane.doe@email.com"
+        class="border-solid border-b-2 p-1"
+      />
+    </div>
+
+    <div class="flex flex-col gap-1 p-3 gap-y-3">
+      <div class="text-start">
+        <span name="category" class="text-start">Category</span>
+      </div>
+      <select name="category" [selectedIndex]="0" class="border-solid border-b-2 p-1">
+        <option value="0">Select</option>
+      </select>
+    </div>
+
+    <div class="flex flex-col gap-1 p-3 gap-y-3">
+      <span name="subject" class="text-start">Subject</span>
+      <input
+        type="text"
+        name="subject"
+        placeholder="Type Something..."
+        class="border-solid border-b-2 p-1"
+      />
+    </div>
+
+    <div class="flex flex-col gap-1 p-3 gap-y-3">
+      <span name="description" class="text-start">Description</span>
+      <textarea
+        type="text"
+        name="description"
+        placeholder="Type Something..."
+        maxlength="500"
+        class="border-solid rounded-md border-2 p-2 h-80"
+      ></textarea>
+    </div>
+
+    <div class="flex flex-col gap-1 p-3 gap-y-3">
+    <button class="hover:cursor-pointer justify-end rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">Submit</button>
+    </div>
+  </div>
+
+  <div class="hidden min-h-0 items-center justify-center lg:col-span-6 lg:flex">
+    <img
+      src="/images/Picture1.svg"
+      alt="Description"
+      class="max-h-full max-w-full object-contain"
+    />
+  </div>
+</div>
